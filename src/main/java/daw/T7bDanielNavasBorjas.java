@@ -67,7 +67,7 @@ public class T7bDanielNavasBorjas {
     public static int contieneLetraNumero(String letraNumero) {
         //hacemos un contador para ir contando cuantas veces se repite el patrón
         int contador = 0;
-        String regex = "[a-zA-Z]{1}\\d{1}";
+        String regex = "[a-zA-Z]{1}\\d{1}+";
         Pattern pattern = Pattern.compile(regex);
         Matcher buscador = pattern.matcher(letraNumero);
 
